@@ -54,7 +54,7 @@ class RootPageContainer extends Component {
 				<div>(react-express-mysql-starter --> src --> react --> RootPage --> containers --> RootPageContainer.js)</div>
 				<br />
 				<div>Configure the 'pool' object in the server.js file to connect to your MySQL database.</div>
-				<div>Change the table name in the url and SQL query in 'app.get' in the server.js file.</div>
+				<div>Change the table name in the url and SQL queries in 'app.get' in the server.js file.</div>
 				<div>Change the table name in the url in the ComponentDidMount method in this page's code.</div>
 				<div>Add routes in App.js inside the HashRouter.</div>
 				<div>Style everything from an imported module (see the code for this page's title).</div>
