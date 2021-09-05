@@ -14,8 +14,8 @@ const port = 3001
 // const queries = {
 // 	getItems: 'SELECT * FROM table-name;',
 // 	getItem: 'SELECT * FROM table-name WHERE id = ?',
-// 	addItem: 'INSERT INTO table-name (column1) VALUES ?',
-// 	editItem: 'UPDATE table-name SET text = ? WHERE id = ?',
+// 	addItem: 'INSERT INTO table-name (column-name) VALUES ?',
+// 	editItem: 'UPDATE table-name SET column-name = ? WHERE id = ?',
 // 	deleteItem: 'DELETE FROM table-name WHERE id = ?'
 // }
 
@@ -53,7 +53,7 @@ app.use(bodyParser.json())
 // app.post('/api/v1/table-name', (request, response) => {
 // 	pool.getConnection((error, connection) => {
 // 		if (error) throw error
-// 		connection.query(queries.addItem, [request.body.text], (error, rows) => {
+// 		connection.query(queries.addItem, [request.body.columnName], (error, rows) => {
 // 			connection.release()
 // 			if (!error) {
 // 				response.send(rows)
@@ -67,7 +67,7 @@ app.use(bodyParser.json())
 // app.patch('/api/v1/table-name/:id', (request, response) => {
 // 	pool.getConnection((error, connection) => {
 // 		if (error) throw error
-// 		connection.query(queries.editItem, [request.body.text, request.params.id], (error, rows) => {
+// 		connection.query(queries.editItem, [request.body.columnName, request.params.id], (error, rows) => {
 // 			connection.release()
 // 			if (!error) {
 // 				response.send(`ID ${response.body.id} edited`)
